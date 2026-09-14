@@ -1,0 +1,10 @@
+const express=require("express")
+const articleController=require("../controllers/articleController")
+const router=express.Router()
+router.get("/",articleController.getAllArticles)
+router.get("/:id",articleController.getArticleById)
+router.post("/",articleController.createArticle)
+router.put("/",articleController.updateArticle)
+router.delete("/:id",articleController.deleteArticle)
+// router.get("/",articleController.getArticleById)
+module.exports=router

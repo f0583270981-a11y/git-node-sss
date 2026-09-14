@@ -1,0 +1,24 @@
+.page{
+    display: grid;
+    grid-template-rows: 50px 1fr 30px;
+    min-height: 100vh;
+}
+header ,footer{
+    background-color: rgb(24, 23, 23);
+    color: rgb(244, 237, 244);
+    display: grid;
+    place-content: center;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.nav a{
+    color: rgb(216, 214, 214);
+
+}
+.nav a.active{
+    background-color: rgb(252, 249, 249);
+    color: rgb(16, 18, 17);
+}

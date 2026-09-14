@@ -1,0 +1,10 @@
+const express = require("express")
+const photoController = require("../controllers/photoController")
+const router = express.Router()
+router.get("/", photoController.getAllPhotos)
+router.get("/:id", photoController.getPhotoById)
+router.post("/", photoController.createPhoto)
+router.put("/", photoController.updatePhoto)
+router.delete("/:id", photoController.deletePhoto)
+// router.put("/active/:id", photoController.updatePhotoActive)
+module.exports = router
